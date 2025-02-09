@@ -150,17 +150,17 @@ def average_slope_intercept(image, lines):
     return average
 
 click()
-# i = 0
-# while i < 10:
-image = takeScreenShot()
-image = np.array(image)
-canned_image = canny(image)
-canned_image = cv2.dilate(canned_image, np.array((3,3), dtype = np.uint8), 3)
-my_show = ROI(canned_image)
-hough_lines = houghLines(my_show)
-avg_lines = average_slope_intercept(image, hough_lines)
-#accellerate(0.105)
-avg_lines = average_slope_intercept(image, hough_lines)
-print(avg_lines)
+i = 0
+while i < 10:
+    image = takeScreenShot()
+    image = np.array(image)
+    canned_image = canny(image)
+    canned_image = cv2.dilate(canned_image, np.array((3,3), dtype = np.uint8), 3)
+    my_show = ROI(canned_image)
+    hough_lines = houghLines(my_show)
+    avg_lines = average_slope_intercept(image, hough_lines)
+    #accellerate(0.105)
+    avg_lines = average_slope_intercept(image, hough_lines)
+    print(avg_lines)
 
-plotImageLines(image, my_show, avg_lines) # use this to see the average lines in a plot
+#plotImageLines(image, my_show, avg_lines) # use this to see the average lines in a plot

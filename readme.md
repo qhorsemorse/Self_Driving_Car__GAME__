@@ -1,4 +1,7 @@
 # Self-Driving Car Project in a Game
+---
+game: https://www.crazygames.com/game/3d-car-simulator
+---
 
 This project serves as a repository for the video __[Self-Driving Car in a Game](https://www.youtube.com/watch?v=OzPakNSU0gU)__. The code from the video is somewhat incomplete and primarily serves as a proof of concept. If you want to get the code from the video (slightly tweaked with some new functions), take the first version of `app.py`. Here are instructions on how to use the first version. Otherwise, keep scrolling to version 2 and beyond.
 
