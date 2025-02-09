@@ -5,7 +5,7 @@ game: https://www.crazygames.com/game/3d-car-simulator
 
 This project serves as a repository for the video __[Self-Driving Car in a Game](https://www.youtube.com/watch?v=OzPakNSU0gU)__. The code from the video is somewhat incomplete and primarily serves as a proof of concept. If you want to get the code from the video (slightly tweaked with some new functions), take the first version of `app.py`. Here are instructions on how to use the first version. Otherwise, keep scrolling to version 2 and beyond.
 
-### V1 `app.py`:
+### V1 `self_driving_car_v1.py`:
 
 This version is a copy of the code from the video, with an additional `plotImageLines(color_image, masked_image, lines)` function to plot the lane lines.
 
@@ -47,4 +47,13 @@ Keep in mind, this version is quite far from being automatic, and it requires so
     - It won't work if there is a missing lane or if the lane is outside the region of interest (simply put: out of car view).
     - This code is supposed to work only with certain cars in 1st person driving (police car and rally car).
 
-### V2: ...ongoing...
+### V2:
+
+- **changes in V2:**
+    - The code has been rewritten in 3 different files all of wich contain one representing class
+    - Added condition for missig lane cases
+
+- **Files:**
+    - `car_commands` = commands to control car
+    - `computer_vision` = contains modules envolving computer vision
+    - `self_driving_v2` = inherits all the methods from the above files to make the car move
